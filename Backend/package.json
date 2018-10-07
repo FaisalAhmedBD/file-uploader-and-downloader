@@ -9,7 +9,6 @@
   "author": "faisal",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "mongoose": "^5.3.1"
+    "express": "^4.16.3"
   }
 }
