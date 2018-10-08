@@ -1,8 +1,10 @@
-var express=require('express');
-var router=express.Router();
-router.get('/',(req,res)=>{
-    res.send('hello from router');
+var express = require('express')
+var router = express.Router()
+const { saveFile } = require('../Module/files/controller')
+router.get('/', (req, res) => {
+    res.send('hello from router')
 })
-module.exports={
+router.post('/upload-file', saveFile)
+module.exports = {
     router
 }
